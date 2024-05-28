@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>tags on znan&#39;s blog</title>
+    <link>https://znan.dev/tags/</link>
+    <description>Recent content in tags on znan&#39;s blog</description>
+    <image>
+      <title>znan&#39;s blog</title>
+      <url>https://znan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://znan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 May 2024 10:33:28 +0800</lastBuildDate>
+    <atom:link href="https://znan.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ctf</title>
+      <link>https://znan.dev/tags/ctf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://znan.dev/tags/ctf/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>python</title>
+      <link>https://znan.dev/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://znan.dev/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>re</title>
+      <link>https://znan.dev/tags/re/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://znan.dev/tags/re/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>posts on znan&#39;s blog</title>
+    <link>https://znan.dev/posts/</link>
+    <description>Recent content in posts on znan&#39;s blog</description>
+    <image>
+      <title>znan&#39;s blog</title>
+      <url>https://znan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://znan.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.126.1</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 May 2024 10:33:28 +0800</lastBuildDate>
+    <atom:link href="https://znan.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BTCTF 2024 snakebyte rev challenge writeup</title>
+      <link>https://znan.dev/posts/btctf-rev-2024/</link>
+      <pubDate>Tue, 28 May 2024 10:33:28 +0800</pubDate>
+      <guid>https://znan.dev/posts/btctf-rev-2024/</guid>
+      <description>could have used chatgpt for this</description>
+    </item>
+  </channel>
+</rss>
