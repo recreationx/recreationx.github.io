@@ -17,9 +17,11 @@ canonicalURL: https://example.org/my-article-was-already-posted-here
 I joined a random team for this CTF. We came in 3rd place.
 
 ## Solution
+
 We were provided with the below python bytecode and were required to find the flag. I used the documentation for the Python library [dis](https://docs.python.org/3/library/dis.html) as reference for the bytecodes.
 
 I noticed that there are a few constants defined by the bytecode.
+
 ```python title="snakebyte.pyc" wrap
   5           0 BUILD_LIST               0
               2 LOAD_CONST               1 (('_', '3', 'N', 'D', 'J', 'b', 'M', '3', 'n', 'D', 'f', 'S', '}'))
@@ -42,7 +44,9 @@ I noticed that there are a few constants defined by the bytecode.
              28 BINARY_SUBTRACT
              30 STORE_FAST               4 (i)
 ```
+
 This is then easily converted into Python:
+
 ```python
 chars = ['_', '3', 'N', 'D', 'J', 'b', 'M', '3', 'n', 'D', 'f', 'S', '}']
 flag = 'btctf{py7h0nS_'
@@ -54,8 +58,8 @@ i = len(encrypted_part) - 1
 I then examine the following code. `POP_JUMP_IF_FALSE` and `POP_JUMP_IF_TRUE` are used to control the flow of execution, thus indicating that there is a presence of a loop. Specifically, if `i` is not greater than `0`, the program will jump to offset `80`, which is the end of loop, and jumps back to the offset `40` if `i` remains greater than `0`.
 
 - Any `LOAD_FAST` used essentially loads the variable onto the stack.
-- `LOAD_GLOBAL`: The body of the loop loads the `chr` function and the `ord` onto the stack. 
-- `BINARY_SUBSCR`: pops the loaded `i` and `encrypted_part` from the stack, accesses `encrypted_part[i]`, and pushes the result onto the stack. 
+- `LOAD_GLOBAL`: The body of the loop loads the `chr` function and the `ord` onto the stack.
+- `BINARY_SUBSCR`: pops the loaded `i` and `encrypted_part` from the stack, accesses `encrypted_part[i]`, and pushes the result onto the stack.
 - `CALL_FUNCTION`: calls `ord` with the top stack element (the character from `encrypted_part[i]`) and pushes the result (an integer) onto the stack.
 - `BINARY_XOR`: A XOR operation is then performed , and `chr` is then called on this result, and the resulting character is pushed onto the stack.
 
@@ -102,6 +106,7 @@ The process is then repeated until `i > 0` is false, which then breaks out of th
 ```
 
 The rest of the bytecode is then repetitive - the program indexes a character from the list `chars`, and append them to the flag.
+
 ```python
  14          92 LOAD_FAST                1 (flag)
              94 LOAD_FAST                0 (chars)
