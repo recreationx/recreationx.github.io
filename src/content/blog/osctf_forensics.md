@@ -9,7 +9,7 @@ tags:
   - forensics
   - ctf
 ogImage: ""
-description: A writeup for the Python bytecode re chall in BTCTF 2024
+description: A writeup for the Excel macro forensics chall in OSCTF 2024
 ---
 
 ## Challenge Description
