@@ -64,7 +64,7 @@ We have our flag.
 
 The Avengers have assembled but for what? To solve this!? Why call Avengers for such a simple thing, when you can solve it yourself
 
-FLAG FORMAT: OSCTF{Inp1_Inp2_Inp3} (Integer values)
+FLAG FORMAT: `OSCTF{Inp1_Inp2_Inp3} (Integer values)`
 
 Author: @Inv1s1bl3
 
@@ -180,7 +180,7 @@ Our first input should be less than 0x6f56df65, and the second input should be e
 
 The second input is XOR'ed with the third input to get 2103609845. To get the third input, we xor the known second input with 2103609845. So `0x6f56df8d ^ 2103609845 = 305419896`
 
-The flag is thus OSCTF{1867964258_1867964301_305419896}
+The flag is thus `OSCTF{1867964258_1867964301_305419896}`.
 
 ## The Broken Sword
 
@@ -188,7 +188,7 @@ The flag is thus OSCTF{1867964258_1867964301_305419896}
 
 The time for the reforging of the The Sword That Was Broken has come.. Elendil left a riddle, solving which will give the password, which is what you need to find :p..
 
-Flag Format: OSCTF{valueof'flag'variable_valueof'a'variable_valueof'v2'variable} / OSCTF{flag_a_v2}
+Flag Format: `OSCTF{valueof'flag'variable_valueof'a'variable_valueof'v2'variable} / OSCTF{flag_a_v2}`
 
 Author: @Inv1s1bl3
 
